@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "sh_reg_test": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 7221,
+            "archive": "archive.2/_5994_archive_1.a",
+            "objects": [
+                [
+                    "hVvst_d.o",
+                    7221
+                ]
+            ]
+        }
+    ],
+    "CompUnits": {
+        "hVvst_d": {
+            "bytes": 7221,
+            "mod": "sh_reg_test",
+            "out": "hVvst_d.o",
+            "mode": 4,
+            "archive": "archive.2/_5994_archive_1.a",
+            "checksum": 0
+        },
+        "amcQw_d": {
+            "bytes": 7205,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {}
+}

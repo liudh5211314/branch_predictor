@@ -5,7 +5,8 @@
 // Auther:			Kerwin Simth									//
 // Date:			2019.12.26										//
 //////////////////////////////////////////////////////////////////////
-`include "sh_reg.vh"
+`include "./sh_reg.vh"
+`timescale 1ns/100ps
 
 module sh_reg(	input				clk,reset,
 				input				wr_en,
@@ -27,6 +28,6 @@ module sh_reg(	input				clk,reset,
 
 	end
 
-	assign rd_data <= shift_reg;
+	assign rd_data = shift_reg;
 
 endmodule
