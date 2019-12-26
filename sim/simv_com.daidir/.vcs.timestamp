@@ -1,0 +1,109 @@
+0 
+32
++itf+/home/fmrt/synopsys/vcs/linux64/lib/vcsdp.tab
++memcbk
++notimingcheck
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc-4.8
+-Mcfl= -pipe -fPIC -O -I/home/fmrt/synopsys/vcs/include
+-Mcplusplus=g++-4.8
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -Wl,--no-as-needed -rdynamic
+-Mobjects= /home/fmrt/synopsys/vcs/linux64/lib/libvirsim.so /home/fmrt/synopsys/vcs/linux64/lib/liberrorinf.so /home/fmrt/synopsys/vcs/linux64/lib/libsnpsmalloc.so
+-Mout=simv_com
+-Msaverestoreobj=/home/fmrt/synopsys/vcs/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/fmrt/synopsys/vcs/include
+-Xpiyushb1=0x80
+-debug_access+all+dmptf+bc
+-debug_region=cell+lib
+-f file_list.f
+-full64
+-gen_obj
+-l
+-o simv_com
+-picarchive
+/home/fmrt/synopsys/vcs/linux64/bin/vcs1
+compile.log
+61
+sysc_uni_pwd=/home/fmrt/workspace/branch_predictor/branch_predictor/sim
+XMODIFIERS=@im=fcitx
+XDG_VTNR=2
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=2
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+WINDOWPATH=2
+VTE_VERSION=5202
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/fmrt/synopsys/verdi
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=compile.log
+VCS_HOME=/home/fmrt/synopsys/vcs
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+USERNAME=fmrt
+UNAME=/bin/uname
+TOOL_HOME=/home/fmrt/synopsys/vcs/linux64
+TEXTDOMAINDIR=/usr/share/locale/
+TEXTDOMAIN=im-config
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_AGENT_PID=1568
+SESSION_MANAGER=local/fmrt-PC:@/tmp/.ICE-unix/1479,unix/fmrt-PC:/tmp/.ICE-unix/1479
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=fcitx
+QT_ACCESSIBILITY=1
+QT4_IM_MODULE=fcitx
+OVA_UUM=0
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/1
+MAKE_TERMERR=/dev/pts/1
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_ALL=C
+IM_CONFIG_PHASE=2
+GTK_MODULES=gail:atk-bridge
+GTK_IM_MODULE=fcitx
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+GNOME_TERMINAL_SERVICE=:1.70
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/bce9b99c_c168_42d1_b46d_1ad7d9f69422
+GNOME_SHELL_SESSION_MODE=ubuntu
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDMSESSION=ubuntu
+DESKTOP_SESSION=ubuntu
+DESKTOP_AUTOSTART_ID=10eb048996dad2375a157734733718847100000014790007
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+COLORTERM=truecolor
+CLUTTER_IM_MODULE=xim
+0
+5
+1577350758 ../rtl/br_pre_header/sh_reg.vh
+1577351237 ../testbench/sh_reg_test.v
+1577350921 ../rtl/sh_reg.v
+1577350705 file_list.f
+1464145466 /home/fmrt/synopsys/vcs/linux64/lib/vcsdp.tab
+4
+0 
+1464147802 /home/fmrt/synopsys/vcs/linux64/lib/libvirsim.so
+1464147272 /home/fmrt/synopsys/vcs/linux64/lib/liberrorinf.so
+1464147248 /home/fmrt/synopsys/vcs/linux64/lib/libsnpsmalloc.so
+1577351326 simv_com.daidir

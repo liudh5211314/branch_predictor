@@ -23,10 +23,10 @@ module sh_reg_test;
 	initial begin
 		
 		clk = 0;
+		#10
 		reset = 1;
 		#10
 		reset = 0;
-		#10
 		wr_en = 1;
 		wr_data = 1;
 		#10

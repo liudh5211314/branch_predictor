@@ -9,7 +9,7 @@
 `ifndef __SH_REG_HEADER__
 	`define __SH_REG_HEADER__
 
-	`define REG_WIDTH		13:0
+	`define REG_WIDTH		[13:0]
 	`define INIT			14'b0
 
 `endif

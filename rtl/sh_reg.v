@@ -5,7 +5,7 @@
 // Auther:			Kerwin Simth									//
 // Date:			2019.12.26										//
 //////////////////////////////////////////////////////////////////////
-`include "./sh_reg.vh"
+`include "../rtl/br_pre_header/sh_reg.vh"
 `timescale 1ns/100ps
 
 module sh_reg(	input				clk,reset,
