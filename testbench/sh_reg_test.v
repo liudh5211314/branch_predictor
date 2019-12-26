@@ -68,8 +68,8 @@ module sh_reg_test;
 						.reset		(reset),
 						.wr_en		(wr_en),
 						.wr_data	(wr_data),
-						.re_en		(re_en)
-						.re_data	(re_data)
+						.re_en		(re_en),
+						.re_data	(re_data),
 						.rd_data	(rd_data));
 
 endmodule
