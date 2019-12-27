@@ -27,37 +27,40 @@ module sh_reg_test;
 		reset = 1;
 		#10
 		reset = 0;
+		#10
 		wr_en = 1;
 		wr_data = 1;
-		#10
+		#20
 		wr_data = 0;
-		#10
+		#20
 		wr_data = 1;
-		#10
+		#20
 		wr_data = 0;
-		#10
+		#20
 		wr_data = 0;
-		#10
+		#20
 		wr_data = 1;
-		#10
+		#20
 		wr_data = 0;
-		#10
+		#20
 		wr_data = 1;
-		#10
+		#20
 		wr_data = 1;
-		#10
+		#20
 		wr_en = 0;
 		wr_data = 0;
-		#10
+		#20
 		wr_data = 1;
 		#10
 		re_en = 1;
+		#10
 		re_data = 14'h2cb9;
 		#10
 		re_en = 0;
 		wr_en = 1;
-		wr_data = 0;
 		#10
+		wr_data = 0;
+		#20
 		wr_data = 1;
 		#10
 		$finish;

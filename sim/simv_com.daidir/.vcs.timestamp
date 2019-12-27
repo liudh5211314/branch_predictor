@@ -64,8 +64,8 @@ TOOL_HOME=/home/fmrt/synopsys/vcs/linux64
 TEXTDOMAINDIR=/usr/share/locale/
 TEXTDOMAIN=im-config
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
-SSH_AGENT_PID=1568
-SESSION_MANAGER=local/fmrt-PC:@/tmp/.ICE-unix/1479,unix/fmrt-PC:/tmp/.ICE-unix/1479
+SSH_AGENT_PID=2032
+SESSION_MANAGER=local/fmrt-PC:@/tmp/.ICE-unix/1943,unix/fmrt-PC:/tmp/.ICE-unix/1943
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QT_IM_MODULE=fcitx
@@ -85,19 +85,19 @@ GTK_MODULES=gail:atk-bridge
 GTK_IM_MODULE=fcitx
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 GNOME_TERMINAL_SERVICE=:1.70
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/bce9b99c_c168_42d1_b46d_1ad7d9f69422
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/988412ed_6f13_4ae9_8cb3_78c97a1bd4bb
 GNOME_SHELL_SESSION_MODE=ubuntu
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GDMSESSION=ubuntu
 DESKTOP_SESSION=ubuntu
-DESKTOP_AUTOSTART_ID=10eb048996dad2375a157734733718847100000014790007
+DESKTOP_AUTOSTART_ID=10b33a5c44eab8fa9f15774383593575100000019430007
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 COLORTERM=truecolor
 CLUTTER_IM_MODULE=xim
 0
 5
 1577350758 ../rtl/br_pre_header/sh_reg.vh
-1577351237 ../testbench/sh_reg_test.v
+1577439000 ../testbench/sh_reg_test.v
 1577350921 ../rtl/sh_reg.v
 1577350705 file_list.f
 1464145466 /home/fmrt/synopsys/vcs/linux64/lib/vcsdp.tab
@@ -106,4 +106,4 @@ CLUTTER_IM_MODULE=xim
 1464147802 /home/fmrt/synopsys/vcs/linux64/lib/libvirsim.so
 1464147272 /home/fmrt/synopsys/vcs/linux64/lib/liberrorinf.so
 1464147248 /home/fmrt/synopsys/vcs/linux64/lib/libsnpsmalloc.so
-1577351326 simv_com.daidir
+1577439014 simv_com.daidir

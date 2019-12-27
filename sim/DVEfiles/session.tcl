@@ -1,10 +1,11 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Thu Dec 26 17:30:43 2019
+# Saved on Fri Dec 27 17:32:38 2019
 # Designs open: 1
 #   Sim: /home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com
 # Toplevel windows open: 1
 # 	TopLevel.1
+#   Source.1: sh_reg_test
 #   Group count = 1
 #   Group Group1 signal count = 7
 # End_DVE_Session_Save_Info
@@ -112,23 +113,23 @@ gui_show_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 171]
+set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 169]
 catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
-gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 171
+gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 169
 gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value -1
 gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 170} {height 742} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 171]
+gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 168} {height 744} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 169]
 catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
-gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 171
-gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 741
+gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 169
+gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 743
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 170} {height 742} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 176]
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 168} {height 744} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 174]
 gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1852
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 176
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 174
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1852} {height 175} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1852} {height 173} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -148,6 +149,13 @@ foreach dockArea $dockAreaList {
 }
 #### End - Readjusting docked view's offset / size
 gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
+gui_show_window -window ${Source.1} -show_state maximized
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+
+# End MDI window settings
 
 gui_set_env TOPLEVELS::TARGET_FRAME(Source) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(Schematic) ${TopLevel.1}
@@ -208,7 +216,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 1528
+gui_set_time -C1_only 2837
 
 
 
@@ -247,10 +255,18 @@ gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
 gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active sh_reg_test /home/fmrt/workspace/branch_predictor/branch_predictor/sim/../testbench/sh_reg_test.v
+gui_view_scroll -id ${Source.1} -vertical -set 180
+gui_src_set_reusable -id ${Source.1}
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Source.1}
 	gui_set_active_window -window ${DLPane.1}
 }
 #</Session>
