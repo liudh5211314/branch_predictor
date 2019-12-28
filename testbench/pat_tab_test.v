@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// File Name:		pat_tab.v										//
-// Function:		pattern history table							//
+// File Name:		pat_tab_test.v									//
+// Function:		pattern history table testbench					//
 // Discribution:													//
 // Auther:			Kerwin Simth									//
 // Date:			2019.12.27										//
@@ -21,16 +21,19 @@ module pat_tab_test;
 	initial begin
 		clk = 0;
 		addr = 14'b0;
+		wr_data = 2'b00;
 		#10
 		reset = 1;
 		#10
 		reset = 0;
-
+		#100000
+		$finish;
 	end
 
 	always @(posedge clk) begin
 		wr_en = 1;
-		
+		addr = addr + 1;
+		wr_data = wr_data + 1;
 	end
 
 	pat_tab pt_module(	.clk		(clk),

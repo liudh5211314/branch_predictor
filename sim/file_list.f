@@ -1,5 +1,5 @@
 //source file
-../rtl/sh_reg.v
+../rtl/pat_tab.v
 
 //testbench
-../testbench/sh_reg_test.v
+../testbench/pat_tab_test.v

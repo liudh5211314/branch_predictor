@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "pat_tab_test": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "AtT5i_d": {
+            "mod": "pat_tab_test",
+            "mode": 4,
+            "out": "AtT5i_d.o",
+            "checksum": 0,
+            "bytes": 17071,
+            "archive": "archive.0/_7008_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "bytes": 7378
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_7008_archive_1.a",
+            "objects": [
+                [
+                    "AtT5i_d.o",
+                    17071
+                ]
+            ],
+            "size": 17071
+        }
+    ]
+}

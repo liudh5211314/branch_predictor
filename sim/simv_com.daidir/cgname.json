@@ -1,12 +1,12 @@
 {
+    "pat_tab_test": [
+        "pat_tab_test",
+        "AtT5i",
+        "module"
+    ],
     "...MASTER...": [
         "SIM",
         "amcQw",
-        "module"
-    ],
-    "sh_reg_test": [
-        "sh_reg_test",
-        "hVvst",
         "module"
     ]
 }

@@ -9,16 +9,16 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpzme1bd
-synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.fmrt.4996}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.fmrt.4996}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp2gihD8
+synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.fmrt.7175}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.fmrt.7175}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-synopsys::dump -add {sh_reg_test.clk sh_reg_test.rd_data sh_reg_test.re_data sh_reg_test.re_en sh_reg_test.reset sh_reg_test.wr_data sh_reg_test.wr_en } -aggregates  -fid VPD0
+synopsys::dump -add {pat_tab_test.addr pat_tab_test.clk pat_tab_test.rd_data pat_tab_test.reset pat_tab_test.wr_data pat_tab_test.wr_en } -aggregates  -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state

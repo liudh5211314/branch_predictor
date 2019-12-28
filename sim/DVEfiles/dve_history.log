@@ -4,18 +4,18 @@ gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_typ
 # State setting overrides
 gui_state_default_create -off -ini
 gui_set_state_value -category Layout -key child_console_size_x -value 1852
-gui_set_state_value -category Layout -key child_console_size_y -value 174
-gui_set_state_value -category Layout -key child_data_size_x -value 169
-gui_set_state_value -category Layout -key child_data_size_y -value 743
+gui_set_state_value -category Layout -key child_console_size_y -value 170
+gui_set_state_value -category Layout -key child_data_size_x -value 165
+gui_set_state_value -category Layout -key child_data_size_y -value 747
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
 gui_set_state_value -category Layout -key child_hier_colpd -value 0
-gui_set_state_value -category Layout -key child_hier_size_x -value 169
-gui_set_state_value -category Layout -key child_hier_size_y -value 743
+gui_set_state_value -category Layout -key child_hier_size_x -value 165
+gui_set_state_value -category Layout -key child_hier_size_y -value 747
 gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_source_size_x -value 1517
-gui_set_state_value -category Layout -key child_source_size_y -value 738
+gui_set_state_value -category Layout -key child_source_size_x -value 1525
+gui_set_state_value -category Layout -key child_source_size_y -value 742
 gui_set_state_value -category Layout -key child_wave_colname -value 266
 gui_set_state_value -category Layout -key child_wave_colvalue -value 266
 gui_set_state_value -category Layout -key child_wave_left -value 537
@@ -41,18 +41,86 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe ./simv_com -args {-ucligui  } -dir .
-gui_list_select -id Data.1 -selected  { sh_reg_test.wr_data   }
+gui_list_select -id Data.1 -selected  { pat_tab_test.clk   }
 gui_list_select_all -id Data.1
 gui_open_window Wave
-gui_list_add -id Wave.1 -from Data.1 { {sh_reg_test.rd_data[13:0]} sh_reg_test.clk sh_reg_test.reset sh_reg_test.wr_en sh_reg_test.wr_data sh_reg_test.re_en {sh_reg_test.re_data[13:0]} } -insertionbar
-gui_marker_move -id  Wave.1 C1 148
+gui_list_add -id Wave.1 -from Data.1 { {pat_tab_test.rd_data[1:0]} pat_tab_test.clk pat_tab_test.reset pat_tab_test.wr_en {pat_tab_test.wr_data[1:0]} {pat_tab_test.addr[13:0]} } -insertionbar
 gui_sim_continue  
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 229
-gui_marker_move -id  Wave.1 C1 188
-gui_marker_move -id  Wave.1 C1 228
-gui_marker_move -id  Wave.1 C1 336
-gui_list_expand -id  Wave.1   {sh_reg_test.rd_data[13:0]}
+gui_marker_move -id  Wave.1 C1 145
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 300
+gui_marker_move -id  Wave.1 C1 300
+gui_marker_move -id  Wave.1 C1 300
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 200
+gui_marker_move -id  Wave.1 C1 200
+gui_marker_move -id  Wave.1 C1 331
+gui_marker_move -id  Wave.1 C1 200
+gui_marker_move -id  Wave.1 C1 200
+gui_marker_move -id  Wave.1 C1 300
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 331
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 300
+gui_list_expand -id  Wave.1   {pat_tab_test.addr[13:0]}
+gui_list_collapse -id  Wave.1   {pat_tab_test.addr[13:0]}
+gui_list_expand -id  Wave.1   {pat_tab_test.addr[13:0]}
+gui_list_collapse -id  Wave.1   {pat_tab_test.addr[13:0]}
+gui_marker_move -id  Wave.1 C1 300
+gui_marker_move -id  Wave.1 C1 500
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 300
+gui_marker_move -id  Wave.1 C1 500
+gui_marker_move -id  Wave.1 C1 500
+gui_marker_move -id  Wave.1 C1 700
+gui_marker_move -id  Wave.1 C1 900
+gui_marker_move -id  Wave.1 C1 1100
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 100
+gui_marker_move -id  Wave.1 C1 216
+gui_marker_move -id  Wave.1 C1 160
+gui_marker_move -id  Wave.1 C1 400
+gui_marker_move -id  Wave.1 C1 600
+gui_marker_move -id  Wave.1 C1 800
+gui_marker_move -id  Wave.1 C1 1011
+gui_marker_move -id  Wave.1 C1 1157
+gui_marker_move -id  Wave.1 C1 1437
+gui_marker_move -id  Wave.1 C1 1621
+gui_marker_move -id  Wave.1 C1 1792
+gui_marker_move -id  Wave.1 C1 1984
+gui_marker_move -id  Wave.1 C1 2200
+gui_marker_move -id  Wave.1 C1 2381
+gui_marker_move -id  Wave.1 C1 2571
+gui_marker_move -id  Wave.1 C1 2821
+gui_marker_move -id  Wave.1 C1 3069
+gui_marker_move -id  Wave.1 C1 3200
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
@@ -64,7 +132,6 @@ gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
-gui_marker_move -id  Wave.1 C1 550
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
@@ -75,14 +142,10 @@ gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
-gui_list_select -id Wave.1 -selected  { sh_reg_test.clk   }
-gui_marker_move -id  Wave.1 C1 740
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
-gui_list_select -id Wave.1 -selected  { {sh_reg_test.rd_data[13:0]}   }
-gui_marker_move -id  Wave.1 C1 942
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
@@ -100,11 +163,6 @@ gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
-gui_marker_move -id  Wave.1 C1 1154
-gui_list_select -id Wave.1 -selected  { sh_reg_test.wr_data   }
-gui_list_select -id Wave.1 -selected  { sh_reg_test.wr_en   }
-gui_marker_move -id  Wave.1 C1 1230
-gui_marker_move -id  Wave.1 C1 1317
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
@@ -141,58 +199,5 @@ gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
 gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_marker_move -id  Wave.1 C1 2955
-gui_marker_move -id  Wave.1 C1 2908
-gui_marker_move -id  Wave.1 C1 2837
+gui_marker_move -id  Wave.1 C1 16048
 gui_close_window -window TopLevel.2
