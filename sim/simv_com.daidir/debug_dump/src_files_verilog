@@ -1,3 +1,3 @@
-/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/br_pre_header/pat_tab.vh
-/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/pat_tab.v
-/home/fmrt/workspace/branch_predictor/branch_predictor/testbench/pat_tab_test.v
+/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/br_pre_header/fin_sta_mac.vh
+/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/fin_sta_mac.v
+/home/fmrt/workspace/branch_predictor/branch_predictor/testbench/fin_sta_mac_test.v

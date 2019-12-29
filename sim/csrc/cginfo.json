@@ -1,64 +1,20 @@
 {
-    "PEModules": [],
-    "stat": {
-        "ru_self_cgstart": {
-            "ru_minflt": 5059,
-            "ru_stime_sec": 0.034216999999999997,
-            "ru_utime_sec": 0.034216999999999997,
-            "ru_maxrss_kb": 81896,
-            "ru_majflt": 0,
-            "ru_nivcsw": 2,
-            "ru_nvcsw": 24
-        },
-        "mopSpeed": 23247.232472324718,
-        "ru_childs_cgstart": {
-            "ru_minflt": 750,
-            "ru_stime_sec": 0.0089060000000000007,
-            "ru_utime_sec": 0.0077809999999999997,
-            "ru_maxrss_kb": 14556,
-            "ru_majflt": 0,
-            "ru_nivcsw": 1,
-            "ru_nvcsw": 4
-        },
-        "nMops": 630,
-        "ru_self_end": {
-            "ru_minflt": 6747,
-            "ru_stime_sec": 0.034491000000000001,
-            "ru_utime_sec": 0.061317000000000003,
-            "ru_maxrss_kb": 90464,
-            "ru_majflt": 0,
-            "ru_nivcsw": 4,
-            "ru_nvcsw": 24
-        },
-        "nQuads": 293,
-        "outputSizePerQuad": 388.0,
-        "totalObjSize": 113689,
-        "quadSpeed": 10811.808118081179,
-        "ru_childs_end": {
-            "ru_minflt": 750,
-            "ru_stime_sec": 0.0089060000000000007,
-            "ru_utime_sec": 0.0077809999999999997,
-            "ru_maxrss_kb": 14556,
-            "ru_majflt": 0,
-            "ru_nivcsw": 1,
-            "ru_nvcsw": 4
-        },
-        "mop/quad": 2.1501706484641638,
-        "Frontend(%)": 55.803447657256541,
-        "CodeGen(%)": 44.196552342743452
-    },
     "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "CurCompileUdps": {},
     "CurCompileModules": [
         "...MASTER...",
         "...MASTER...",
-        "pat_tab_test",
-        "pat_tab_test"
+        "fin_sta_mac_test",
+        "fin_sta_mac_test"
     ],
-    "PrevCompiledModules": {},
     "NameTable": {
-        "pat_tab_test": [
-            "pat_tab_test",
-            "AtT5i",
+        "fin_sta_mac_test": [
+            "fin_sta_mac_test",
+            "MDiKJ",
             "module"
         ],
         "...MASTER...": [
@@ -67,24 +23,65 @@
             "module"
         ]
     },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nivcsw": 5,
+            "ru_utime_sec": 0.049882999999999997,
+            "ru_stime_sec": 0.020784,
+            "ru_maxrss_kb": 82048,
+            "ru_minflt": 5193,
+            "ru_nvcsw": 25,
+            "ru_majflt": 0
+        },
+        "nMops": 623,
+        "nQuads": 283,
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 4,
+            "ru_utime_sec": 0.0086979999999999991,
+            "ru_stime_sec": 0.0081080000000000006,
+            "ru_maxrss_kb": 14444,
+            "ru_minflt": 747,
+            "ru_nvcsw": 4,
+            "ru_majflt": 0
+        },
+        "CodeGen(%)": 15.300370156552457,
+        "totalObjSize": 113757,
+        "ru_childs_end": {
+            "ru_nivcsw": 4,
+            "ru_utime_sec": 0.0086979999999999991,
+            "ru_stime_sec": 0.0081080000000000006,
+            "ru_maxrss_kb": 14444,
+            "ru_minflt": 747,
+            "ru_nvcsw": 4,
+            "ru_majflt": 0
+        },
+        "ru_self_end": {
+            "ru_nivcsw": 6,
+            "ru_utime_sec": 0.058894000000000002,
+            "ru_stime_sec": 0.029447000000000001,
+            "ru_maxrss_kb": 89392,
+            "ru_minflt": 6542,
+            "ru_nvcsw": 25,
+            "ru_majflt": 0
+        },
+        "outputSizePerQuad": 401.0,
+        "Frontend(%)": 84.699629843447539
+    },
     "CompileStrategy": "fullobj",
-    "CurCompileUdps": {},
     "SIMBData": {
         "out": "amcQwB.o",
-        "bytes": 89240
+        "bytes": 88819
     },
-    "LVLData": [
-        "SIM"
-    ],
+    "PEModules": [],
     "CompileProcesses": [
-        "cgproc.7008.json"
+        "cgproc.6450.json"
     ],
     "Misc": {
-        "cwd": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim",
-        "daidir_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir",
         "daidir": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir",
         "csrc": "csrc",
+        "cwd": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim",
         "csrc_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/csrc",
+        "daidir_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir",
         "default_output_dir": "csrc",
         "archive_dir": "archive.0"
     },

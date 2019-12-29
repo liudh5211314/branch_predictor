@@ -1,5 +1,5 @@
 //source file
-../rtl/pat_tab.v
+../rtl/fin_sta_mac.v
 
 //testbench
-../testbench/pat_tab_test.v
+../testbench/fin_sta_mac_test.v

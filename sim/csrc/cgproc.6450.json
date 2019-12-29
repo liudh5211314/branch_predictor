@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "fin_sta_mac_test": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7386,
+            "checksum": 0,
+            "mode": 4
+        },
+        "MDiKJ_d": {
+            "mod": "fin_sta_mac_test",
+            "out": "MDiKJ_d.o",
+            "bytes": 17552,
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.0/_6450_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_6450_archive_1.a",
+            "objects": [
+                [
+                    "MDiKJ_d.o",
+                    17552
+                ]
+            ],
+            "size": 17552
+        }
+    ],
+    "reusePaths": {}
+}
