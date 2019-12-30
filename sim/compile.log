@@ -2,7 +2,7 @@ Command: vcs -full64 -cpp g++-4.8 -cc gcc-4.8 -LDFLAGS -Wl,--no-as-needed +notim
 -debug_all +vpdfile+simv_com.vpd -o simv_com -l compile.log -f file_list.f
 *** Using c compiler gcc-4.8 instead of cc ...
                          Chronologic VCS (TM)
-         Version L-2016.06_Full64 -- Sun Dec 29 21:39:00 2019
+         Version L-2016.06_Full64 -- Mon Dec 30 09:59:57 2019
                Copyright (c) 1991-2016 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -10,17 +10,17 @@ This program is proprietary and confidential information of Synopsys Inc.
 and may be used and disclosed only as authorized in a license agreement
 controlling such use and disclosure.
 
-Parsing design file '../rtl/fin_sta_mac.v'
-Parsing included file '../rtl/br_pre_header/fin_sta_mac.vh'.
-Back to file '../rtl/fin_sta_mac.v'.
-Parsing design file '../testbench/fin_sta_mac_test.v'
+Parsing design file '../rtl/bra_his_tab.v'
+Parsing included file '../rtl/br_pre_header/bra_his_tab.vh'.
+Back to file '../rtl/bra_his_tab.v'.
+Parsing design file '../testbench/bra_his_tab_test.v'
 Top Level Modules:
-       fin_sta_mac_test
+       bra_his_tab_test
 TimeScale is 1 ns / 100 ps
 Starting vcs inline pass...
 1 unique modules to generate
 1 module and 0 UDP read. 
-recompiling module fin_sta_mac_test
+recompiling module bra_his_tab_test
 All of 1 modules done
 make[1]: Entering directory '/home/fmrt/workspace/branch_predictor/branch_predictor/sim/csrc' \
 
@@ -28,7 +28,7 @@ rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv_com ]; then chmod -x ../simv_com; fi
 g++-4.8  -o ../simv_com   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv_com.daidir/ \
 -Wl,-rpath=./simv_com.daidir/ -Wl,-rpath='$ORIGIN'/simv_com.daidir//scsim.db.dir \
--Wl,--no-as-needed -rdynamic   amcQwB.o objs/amcQw_d.o   _6450_archive_1.so  SIM_l.o \
+-Wl,--no-as-needed -rdynamic   amcQwB.o objs/amcQw_d.o   _11051_archive_1.so  SIM_l.o \
 rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /home/fmrt/synopsys/vcs/linux64/lib/libzerosoft_rt_stubs.so \
 /home/fmrt/synopsys/vcs/linux64/lib/libvirsim.so /home/fmrt/synopsys/vcs/linux64/lib/liberrorinf.so \
 /home/fmrt/synopsys/vcs/linux64/lib/libsnpsmalloc.so    /home/fmrt/synopsys/vcs/linux64/lib/libvcsnew.so \
@@ -39,4 +39,4 @@ rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /home/f
 ../simv_com up to date
 make[1]: Leaving directory '/home/fmrt/workspace/branch_predictor/branch_predictor/sim/csrc' \
 
-CPU time: .134 seconds to compile + .237 seconds to elab + .147 seconds to link
+CPU time: .143 seconds to compile + .237 seconds to elab + .149 seconds to link

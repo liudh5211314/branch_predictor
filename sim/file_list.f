@@ -1,5 +1,5 @@
 //source file
-../rtl/fin_sta_mac.v
+../rtl/bra_his_tab.v
 
 //testbench
-../testbench/fin_sta_mac_test.v
+../testbench/bra_his_tab_test.v

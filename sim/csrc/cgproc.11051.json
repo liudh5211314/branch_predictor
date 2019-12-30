@@ -1,0 +1,39 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "...MASTER...": {},
+        "bra_his_tab_test": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7386,
+            "checksum": 0
+        },
+        "qv0aF_d": {
+            "mod": "bra_his_tab_test",
+            "out": "qv0aF_d.o",
+            "mode": 4,
+            "bytes": 19507,
+            "archive": "archive.0/_11051_archive_1.a",
+            "checksum": 0
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_11051_archive_1.a",
+            "objects": [
+                [
+                    "qv0aF_d.o",
+                    19507
+                ]
+            ],
+            "size": 19507
+        }
+    ]
+}

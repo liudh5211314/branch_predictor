@@ -7,7 +7,7 @@ UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=fin_sta_mac_test 
+TOP=bra_his_tab_test 
 OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
 
 [Value]

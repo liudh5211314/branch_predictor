@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 // File Name:		sh_reg.v										//
-// Function:		shify register									//
+// Function:		shift register									//
 // Discribution:													//
 // Auther:			Kerwin Simth									//
 // Date:			2019.12.26										//
