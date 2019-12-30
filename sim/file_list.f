@@ -1,5 +1,5 @@
 //source file
-../rtl/bra_his_tab.v
+../rtl/pre_set_tab.v
 
 //testbench
-../testbench/bra_his_tab_test.v
+../testbench/pre_set_tab_test.v

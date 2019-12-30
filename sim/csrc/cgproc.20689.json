@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "pre_set_tab_test": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7386,
+            "mode": 4,
+            "checksum": 0
+        },
+        "upYBi_d": {
+            "mod": "pre_set_tab_test",
+            "out": "upYBi_d.o",
+            "bytes": 25737,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_20689_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "upYBi_d.o",
+                    25737
+                ]
+            ],
+            "archive": "archive.0/_20689_archive_1.a",
+            "size": 25737
+        }
+    ],
+    "reusePaths": {}
+}

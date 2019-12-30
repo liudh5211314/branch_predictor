@@ -9,16 +9,16 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpuksxT7
-synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.fmrt.11226}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.fmrt.11226}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp1Ta1z1
+synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.fmrt.20864}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.fmrt.20864}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-synopsys::dump -add {bra_his_tab_test.addr bra_his_tab_test.clk bra_his_tab_test.rd_data bra_his_tab_test.reset bra_his_tab_test.wr_data bra_his_tab_test.wr_en } -aggregates  -fid VPD0
+synopsys::dump -add {pre_set_tab_test.clk pre_set_tab_test.rd_data pre_set_tab_test.reset pre_set_tab_test.set_addr pre_set_tab_test.tab_addr pre_set_tab_test.up_data pre_set_tab_test.wr_en } -aggregates  -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state

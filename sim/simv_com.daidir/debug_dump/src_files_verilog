@@ -1,3 +1,3 @@
-/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/br_pre_header/bra_his_tab.vh
-/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/bra_his_tab.v
-/home/fmrt/workspace/branch_predictor/branch_predictor/testbench/bra_his_tab_test.v
+/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/br_pre_header/pre_set_tab.vh
+/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/pre_set_tab.v
+/home/fmrt/workspace/branch_predictor/branch_predictor/testbench/pre_set_tab_test.v

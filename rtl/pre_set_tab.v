@@ -15,6 +15,20 @@ module pre_set_tab(	input					clk,reset,
 					input	`TAB_DEEPTH		tab_addr,
 					output	`DATA_WIDTH		rd_data);
 
-	reg	`DATA_WIDTH	
+	reg	`DATA_WIDTH	set_tab `DATA_DEEPTH;
+	wire `TRUE_ADDR	addr;
+
+	assign addr = {tab_addr,set_addr};
+
+	integer i;
+	always @(posedge clk) begin
+		if(reset)
+			for(i = 0;i < `LOOP_CONT;i = i + 1)
+				set_tab[i] <= `INIT;
+		else if(wr_en)
+			set_tab[addr] <= up_data;
+	end
+
+	assign rd_data = set_tab[addr];
 
 endmodule
