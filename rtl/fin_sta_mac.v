@@ -12,6 +12,7 @@ module fin_sta_mac(	input					clk,reset,
 					input					torn,
 					input		`DATA_WIDTH	in_data,
 					output	reg				up_torn,
+					output	reg				wr_en,
 					output	reg	`DATA_WIDTH	out_data);
 	
 	reg `DATA_WIDTH	next_state;
@@ -62,6 +63,10 @@ module fin_sta_mac(	input					clk,reset,
 	
 
 	always @(posedge clk) begin
+		if(in_data == `WELL_NEAKEN && !torn || in_data == `WELL_TAKEN && torn)
+			wr_en <= 0;
+		else 
+			wr_en <= 1;
 		out_data <= next_state;
 	end
 

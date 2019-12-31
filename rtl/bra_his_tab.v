@@ -9,19 +9,19 @@
 `timescale 1ns/100ps
 
 module bra_his_tab(	input				clk,reset,
-					input				wr_en,
+					input				up_en,
 					input				wr_data,
 					input	`ADDR_WIDTH	addr,
 					output	`DATA_WIDTH	rd_data);
 
 	reg	`DATA_WIDTH	tab	`DATA_DEEPTH;
-	
+
 	integer i;
 	always @(posedge clk) begin
 		if(reset)
 			for(i = 0;i < `LOOP_CONT;i = i + 1)
 				tab[i] <= `INIT;
-		else if(wr_en)
+		else if(up_en)
 			tab[addr] <= {tab[addr][8:0],wr_data};
 	end
 
