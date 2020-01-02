@@ -11,9 +11,8 @@
 module predictor_top(	input					clk,reset,
 						input					dp_en,btb_en,
 						input					gshare_reen,
-						input					PAs_torn,
-						input					type,
 						input					PAs_up_en,
+						input					PAs_wr_data,
 						input	`GHR_WIDTH		re_GHR,
 						input	`ADDR_WIDTH		addr,
 						input	`TARGET_ADDR	up_addr,
@@ -30,19 +29,20 @@ module predictor_top(	input					clk,reset,
 	wire `PHT_WIDTH		pht_rd_data;
 
 	// PAs difination
-	wire				PAs_wr_data;
 	wire				PAs_bht_addr;
 	wire `RPT_WIDTH		PAs_rd_data;
+	wire				PST_wr_en;
 	wire `PHT_WIDTH		PST_up_data;
 	wire `SET_WIDTH		PST_set_addr;
 	wire `TAB_DEEPTH	PST_tab_addr;
 	wire `PHT_WIDTH		PST_rd_data;
 
 	// selector
-	wire `SEL_WIDTH		SEL_data; 
+	wire `SEL_WIDTH		SEL_data;
 
 	// gshare branch predictor
 	assign pht_addr = ghr_out ^ addr[13:0];
+	assign gshare_wr_en = SEL_data[1:1];
 
 	sh_reg sr_module(	.clk		(clk			),
 						.reset		(reset			),
@@ -74,14 +74,14 @@ module predictor_top(	input					clk,reset,
 
 	bra_his_tab bht_module(	.clk		(clk			),
 							.reset		(reset			),
-							.wr_en		(PAs_wr_en		),
+							.wr_en		(PAs_up_en		),
 							.wr_data	(PAs_wr_data	),
 							.addr		(PAs_bht_addr	),
 							.rd_data	(PAs_rd_data	));
 	
 	pre_set_tab pst_module(	.clk		(clk			),
 							.reset		(reset			),
-							.wr_en		(PST_up_en		),
+							.wr_en		(PST_wr_en		),
 							.up_data	(PST_up_data	),
 							.set_addr	(PST_set_addr	),
 							.tab_addr	(PST_tab_addr	),
@@ -89,11 +89,13 @@ module predictor_top(	input					clk,reset,
 
 	fin_sta_mac fsm_module2(.clk		(clk			),
 							.reset		(reset			),
-							.torn		(PAs_torn		),
+							.torn		(PAs_wr_data	),
 							.in_data	(PST_rd_data	),
 							.up_torn	(				),
 							.wr_en		(PST_wr_en		),
 							.out_data	(PST_up_data	));
+
+	
 	
 
 endmodule
