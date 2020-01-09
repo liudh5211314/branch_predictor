@@ -30,46 +30,48 @@ module fin_sta_mac(	input					clk,reset,
 		else if(in_data == `WELL_TAKEN)
 			up_torn <= 1;
 	end
+	
+	always @(posedge clk) begin
+		if(reset) 
+			out_data <= `INIT;
+		else
+			out_data <= next_state;
+	end
 
 	always @(*) begin
 		case(in_data)
 			`WELL_NTAKEN:begin
 				if(torn)
-					next_state = `NTAKEN;
+					#1 next_state = `NTAKEN;
 				else
-					next_state = `WELL_NTAKEN;
+					#1 next_state = `WELL_NTAKEN;
 			end
 			`NTAKEN:begin
 				if(torn)
-					next_state = `TAKEN;
+					#1 next_state = `TAKEN;
 				else
-					next_state = `WELL_NTAKEN;
+					#1 next_state = `WELL_NTAKEN;
 			end
 			`TAKEN:begin
 				if(torn)
-					next_state = `WELL_TAKEN;
+					#1 next_state = `WELL_TAKEN;
 				else
-					next_state = `NTAKEN;
+					#1 next_state = `NTAKEN;
 			end
 			`WELL_TAKEN:begin
 				if(torn)
-					next_state = `WELL_TAKEN;
+					#1 next_state = `WELL_TAKEN;
 				else
-					next_state = `TAKEN;
+					#1 next_state = `TAKEN;
 			end
 		endcase
 	end
-	
 
 	always @(posedge clk) begin
 		if(in_data == `WELL_NTAKEN && !torn || in_data == `WELL_TAKEN && torn)
 			wr_en <= 0;
 		else 
 			wr_en <= 1;
-		if(reset)
-			out_data <= `INIT;
-		else
-			out_data <= next_state;
 	end
 
 endmodule

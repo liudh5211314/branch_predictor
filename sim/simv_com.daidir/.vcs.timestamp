@@ -84,26 +84,26 @@ IM_CONFIG_PHASE=2
 GTK_MODULES=gail:atk-bridge
 GTK_IM_MODULE=fcitx
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-GNOME_TERMINAL_SERVICE=:1.72
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/13624a76_3986_4c8d_aca3_1c72baf6750a
+GNOME_TERMINAL_SERVICE=:1.66
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/d30c79ff_633d_4449_ae4b_bc3bd6291681
 GNOME_SHELL_SESSION_MODE=ubuntu
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GDMSESSION=ubuntu
 DESKTOP_SESSION=ubuntu
-DESKTOP_AUTOSTART_ID=10dd833834ee49cb52157794512151978100000015990007
+DESKTOP_AUTOSTART_ID=109ccb2b0fcc8dd2b6157837780036636400000015990007
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 COLORTERM=truecolor
 CLUTTER_IM_MODULE=xim
 0
 5
-1577966545 ../rtl/br_pre_header/fsm_for_sel.vh
-1577968332 ../testbench/fin_sta_mac_test.v
-1577967126 ../rtl/fsm_for_sel.v
-1577966884 file_list.f
+1578380502 ../rtl/br_pre_header/sel_tab.vh
+1578380988 ../testbench/sel_tab_test.v
+1578381316 ../rtl/sel_tab.v
+1578381059 file_list.f
 1464145466 /home/fmrt/synopsys/vcs/linux64/lib/vcsdp.tab
 4
 0 
 1464147802 /home/fmrt/synopsys/vcs/linux64/lib/libvirsim.so
 1464147272 /home/fmrt/synopsys/vcs/linux64/lib/liberrorinf.so
 1464147248 /home/fmrt/synopsys/vcs/linux64/lib/libsnpsmalloc.so
-1577968348 simv_com.daidir
+1578381325 simv_com.daidir

@@ -1,5 +1,5 @@
 //source file
-../rtl/fsm_for_sel.v
+../rtl/sel_tab.v
 
 //testbench
-../testbench/fin_sta_mac_test.v
+../testbench/sel_tab_test.v

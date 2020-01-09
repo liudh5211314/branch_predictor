@@ -11,6 +11,7 @@
 module bra_his_tab(	input				clk,reset,
 					input				up_en,
 					input				wr_data,
+					input	`ADDR_WIDTH	up_addr,
 					input	`ADDR_WIDTH	addr,
 					output	`DATA_WIDTH	rd_data);
 
@@ -22,7 +23,7 @@ module bra_his_tab(	input				clk,reset,
 			for(i = 0;i < `LOOP_CONT;i = i + 1)
 				tab[i] <= `INIT;
 		else if(up_en)
-			tab[addr] <= {tab[addr][8:0],wr_data};
+			tab[up_addr] <= {tab[up_addr][8:0],wr_data};
 	end
 
 	assign rd_data = tab[addr];

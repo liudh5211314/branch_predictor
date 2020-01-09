@@ -28,27 +28,27 @@ module fsm_for_sel(	input						clk,reset,
 		case(in_data)
 			`WELL_NTAKEN:begin
 				if(torf)
-					next_state = `WELL_NTAKEN;
+					#1 next_state = `WELL_NTAKEN;
 				else
-					next_state = `NTAKEN;
+					#1 next_state = `NTAKEN;
 			end
 			`NTAKEN:begin
 				if(torf)
-					next_state = `WELL_NTAKEN;
+					#1 next_state = `WELL_NTAKEN;
 				else
-					next_state = `TAKEN;
+					#1 next_state = `TAKEN;
 			end
 			`TAKEN:begin
 				if(torf)
-					next_state = `WELL_TAKEN;
+					#1 next_state = `WELL_TAKEN;
 				else
-					next_state = `NTAKEN;
+					#1 next_state = `NTAKEN;
 			end
 			`WELL_TAKEN:begin
 				if(torf)
-					next_state = `WELL_TAKEN;
+					#1 next_state = `WELL_TAKEN;
 				else
-					next_state = `TAKEN;
+					#1 next_state = `TAKEN;
 			end
 		endcase
 
