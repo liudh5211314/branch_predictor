@@ -1,14 +1,31 @@
 {
     "MlibObjs": {},
-    "CompileStrategy": "fullobj",
+    "Misc": {
+        "archive_dir": "archive.0",
+        "cwd": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim",
+        "csrc": "csrc",
+        "csrc_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/csrc",
+        "daidir": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir",
+        "daidir_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CompileProcesses": [
+        "cgproc.20397.json"
+    ],
+    "PrevCompiledModules": {},
     "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 89239
+        "bytes": 91092,
+        "out": "amcQwB.o"
     },
     "NameTable": {
-        "sel_tab_test": [
-            "sel_tab_test",
-            "FJLa5",
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "cache_tag_test": [
+            "cache_tag_test",
+            "uduFS",
             "module"
         ],
         "...MASTER...": [
@@ -17,76 +34,66 @@
             "module"
         ]
     },
-    "CompileProcesses": [
-        "cgproc.4186.json"
-    ],
-    "PrevCompiledModules": {},
+    "CurCompileUdps": {},
+    "CompileStatus": "Successful",
+    "PEModules": [],
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "nQuads": 601,
+        "ru_self_end": {
+            "ru_maxrss_kb": 94128,
+            "ru_utime_sec": 0.092397999999999994,
+            "ru_stime_sec": 0.019248999999999999,
+            "ru_minflt": 7349,
+            "ru_majflt": 0,
+            "ru_nvcsw": 25,
+            "ru_nivcsw": 7
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 15648,
+            "ru_utime_sec": 0.0032079999999999999,
+            "ru_stime_sec": 0.010591,
+            "ru_minflt": 747,
+            "ru_majflt": 0,
+            "ru_nvcsw": 4,
+            "ru_nivcsw": 0
+        },
+        "ru_self_cgstart": {
+            "ru_maxrss_kb": 85700,
+            "ru_utime_sec": 0.065188999999999997,
+            "ru_stime_sec": 0.019172999999999999,
+            "ru_minflt": 5752,
+            "ru_majflt": 0,
+            "ru_nvcsw": 25,
+            "ru_nivcsw": 7
+        },
+        "ru_childs_cgstart": {
+            "ru_maxrss_kb": 15648,
+            "ru_utime_sec": 0.0032079999999999999,
+            "ru_stime_sec": 0.010591,
+            "ru_minflt": 747,
+            "ru_majflt": 0,
+            "ru_nvcsw": 4,
+            "ru_nivcsw": 0
+        },
+        "totalObjSize": 163004,
+        "nMops": 1422,
+        "CodeGen(%)": 29.447607091062579,
+        "mopSpeed": 52262.119151751263,
+        "quadSpeed": 22088.279613363229,
+        "mop/quad": 2.3660565723793678,
+        "outputSizePerQuad": 271.0,
+        "Frontend(%)": 70.552392908937421
+    },
     "CurCompileModules": [
         "...MASTER...",
         "...MASTER...",
-        "sel_tab_test",
-        "sel_tab_test"
+        "std",
+        "std",
+        "cache_tag_test",
+        "cache_tag_test"
     ],
-    "stat": {
-        "nMops": 678,
-        "ru_self_cgstart": {
-            "ru_nvcsw": 136,
-            "ru_maxrss_kb": 81504,
-            "ru_utime_sec": 0.037962000000000003,
-            "ru_stime_sec": 0.043385,
-            "ru_nivcsw": 4,
-            "ru_majflt": 109,
-            "ru_minflt": 5045
-        },
-        "nQuads": 300,
-        "ru_childs_cgstart": {
-            "ru_nvcsw": 4,
-            "ru_maxrss_kb": 14524,
-            "ru_utime_sec": 0.0038560000000000001,
-            "ru_stime_sec": 0.012312,
-            "ru_nivcsw": 0,
-            "ru_majflt": 0,
-            "ru_minflt": 751
-        },
-        "totalObjSize": 114367,
-        "ru_self_end": {
-            "ru_nvcsw": 176,
-            "ru_maxrss_kb": 89704,
-            "ru_utime_sec": 0.061247999999999997,
-            "ru_stime_sec": 0.061247999999999997,
-            "ru_nivcsw": 4,
-            "ru_majflt": 146,
-            "ru_minflt": 6571
-        },
-        "mop/quad": 2.2599999999999998,
-        "ru_childs_end": {
-            "ru_nvcsw": 4,
-            "ru_maxrss_kb": 14524,
-            "ru_utime_sec": 0.0038560000000000001,
-            "ru_stime_sec": 0.012312,
-            "ru_nivcsw": 0,
-            "ru_majflt": 0,
-            "ru_minflt": 751
-        },
-        "mopSpeed": 29116.207163102299,
-        "quadSpeed": 12883.277505797478,
-        "CodeGen(%)": 38.01920062695924,
-        "outputSizePerQuad": 381.0,
-        "Frontend(%)": 61.98079937304076
-    },
-    "PEModules": [],
-    "CurCompileUdps": {},
     "LVLData": [
         "SIM"
-    ],
-    "CompileStatus": "Successful",
-    "Misc": {
-        "csrc_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/csrc",
-        "cwd": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim",
-        "default_output_dir": "csrc",
-        "csrc": "csrc",
-        "archive_dir": "archive.0",
-        "daidir_abs": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir",
-        "daidir": "/home/fmrt/workspace/branch_predictor/branch_predictor/sim/simv_com.daidir"
-    }
+    ]
 }

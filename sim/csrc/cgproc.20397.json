@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "cache_tag_test": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "bytes": 7568,
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "bytes": 41566,
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_20397_archive_1.a"
+        },
+        "uduFS_d": {
+            "mod": "cache_tag_test",
+            "bytes": 22778,
+            "out": "uduFS_d.o",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_20397_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_20397_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    41566
+                ],
+                [
+                    "uduFS_d.o",
+                    22778
+                ]
+            ],
+            "size": 64344
+        }
+    ]
+}

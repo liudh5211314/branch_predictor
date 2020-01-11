@@ -4,6 +4,7 @@ OUTPUT = simv_com
 VPD_NAME = +vpdfile+${OUTPUT}.vpd
 
 VCS =	vcs -full64 -cpp g++-4.8 -cc gcc-4.8		\
+		-sverilog									\
 		-LDFLAGS -Wl,--no-as-needed					\
 		+notimingcheck								\
 		-debug_all									\

@@ -10,11 +10,12 @@
 
 module cache_tag(	input					clk,reset,
 					input					up_en,
+					input	`ADDR_WIDTH		up_addr,
 					input	`ADDR_WIDTH		addr,
 					input	`TAG_WIDTH		new_tag,
 					output	`TAG_WIDTH		rd_tag);
 
-	reg `TAG_TAB_WIDTH	tab	`TAG_DEEPTH
+	reg `TAG_TAB_WIDTH	tab	`TAG_DEEPTH;
 
 	integer i;
 	always @(posedge clk) begin
@@ -23,12 +24,12 @@ module cache_tag(	input					clk,reset,
 			for(i = 0;i < `LOOP_TIMES;i = i + 1)
 				tab[i][20:20] <= `INIT;
 		else if(up_en) begin
-			tab[addr]`TAG_WIDTH <= new_tag;
-			tab[addr][20:20] <= `RESET;
+			tab[up_addr]`TAG_WIDTH <= new_tag;
+			tab[up_addr][20:20] <= `SETTING;
 		end
 
 	end
 
-	assign rd_tag = tab
+	assign rd_tag = tab[addr][20:20] ? tab[addr]`TAG_WIDTH : 20'bx;
 
 endmodule

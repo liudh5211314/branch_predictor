@@ -1,5 +1,5 @@
 //source file
-../rtl/sel_tab.v
+../rtl/cache_tag.v
 
 //testbench
-../testbench/sel_tab_test.v
+../testbench/cache_tag_test.v

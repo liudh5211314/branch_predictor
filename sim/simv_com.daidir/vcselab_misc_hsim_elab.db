@@ -174,8 +174,8 @@ fHsimAmsTunnelingDiag              	0
 fHsimScUpwardXmrNoSplit            	1
 fHsimOrigNdbViewOnly               	0
 fHsimVcsInterface                  	1
-fHsimVcsInterfaceAlias             	0
-fHsimSVTypesIntf                   	0
+fHsimVcsInterfaceAlias             	1
+fHsimSVTypesIntf                   	1
 fUnifiedAssertCtrlDiag             	0
 fHsimEnable2StateScal              	0
 fHsimDisable2StateScalIbn          	0
@@ -472,7 +472,7 @@ fPulseOpt                          	0
 fGblPulseOnD                       	0
 fGblPulseOnE                       	0
 fVCSiFlow                          	0
-fSystemVCSEnabled                  	0
+fSystemVCSEnabled                  	1
 fHsimForcedPort                    	0
 fpicOption                         	1
 fModelSave                         	0

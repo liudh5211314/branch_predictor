@@ -1,3 +1,3 @@
-/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/br_pre_header/sel_tab.vh
-/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/sel_tab.v
-/home/fmrt/workspace/branch_predictor/branch_predictor/testbench/sel_tab_test.v
+/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/br_pre_header/cache_tag.vh
+/home/fmrt/workspace/branch_predictor/branch_predictor/rtl/cache_tag.v
+/home/fmrt/workspace/branch_predictor/branch_predictor/testbench/cache_tag_test.v
